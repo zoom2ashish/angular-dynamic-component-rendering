@@ -1,0 +1,17 @@
+# Write Example Github actions workflow file that will run on manual trigger and on push to master branch
+name: Test
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run tests
+        run: |
+          echo "Running tests"
+          echo "Tests passed"
