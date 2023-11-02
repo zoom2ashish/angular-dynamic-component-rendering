@@ -15,3 +15,5 @@ jobs:
         run: |
           echo "Running tests"
           echo "Tests passed"
+          ls -ltra
+          node -v
