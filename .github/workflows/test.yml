@@ -14,7 +14,7 @@ jobs:
       - name: Run tests
         run: |
           echo "Running tests"
-          echo "${{ vars.AWS_SECRET_ACCESS_ID }}"
+          echo ${{ vars.AWS_SECRET_ACCESS_ID }}
           echo "Tests passed"
           ls -ltra
           node -v
